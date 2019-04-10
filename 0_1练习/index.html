@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.loading{
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+				position: relative;
+			}			
+			.child1{
+				box-sizing: border-box;
+				width: 200px;
+				height: 200px;
+				border: 2px solid #000;
+				border-radius: 150px;				
+				border-top-color:red ;
+				border-bottom-color:red ;
+				border-left-color:red;
+				border-right-color:red ;		
+				position: absolute;
+				left: calc(50% - 100px);
+				top: calc(50% - 100px);						
+				animation: xuanzhuan 2s infinite 6s ;
+				animation-timing-function: linear;
+				animation: donghua1 2s infinite 6s ;
+			}			
+			.child2{
+				box-sizing: border-box;
+				width: 160px;
+				height: 160px;
+				border: 2px solid #000;
+				border-radius: 100px;				
+				border-top-color:yellow ;
+				border-bottom-color:transparent ;
+				border-left-color:yellow;
+				border-right-color:yellow ;				
+				position: absolute;
+				left: calc(50% - 80px);
+				top: calc(50% - 80px);
+				animation: xuanzhuan 2s infinite 4.5s;
+				animation-timing-function: linear;
+			}			
+			.child3{
+				box-sizing: border-box;
+				width: 120px;
+				height: 120px;
+				border: 2px solid #000;
+				border-radius: 100px;				
+				border-top-color:green;
+				border-bottom-color:green ;
+				border-left-color:transparent;
+				border-right-color:green ;				
+				position: absolute;
+				left: calc(50% - 60px);
+				top: calc(50% - 60px);
+				animation: xuanzhuan 2s infinite 3s;
+				animation-timing-function: linear;
+			}			
+			.child4{
+				box-sizing: border-box;
+				width: 80px;
+				height: 80px;
+				border: 2px solid #000;
+				border-radius: 100px;				
+				border-top-color:transparent ;
+				border-bottom-color:blue ;
+				border-left-color:blue;
+				border-right-color:blue ;				
+				position: absolute;
+				left: calc(50% - 40px);
+				top: calc(50% - 40px);
+				animation: xuanzhuan 2s infinite 1.5s;
+				animation-timing-function: linear;
+			}		
+			.child5{
+				box-sizing: border-box;
+				width: 40px;
+				height: 40px;
+				border: 2px solid #000;
+				border-radius: 100px;				
+				border-top-color:pink ;
+				border-bottom-color:pink  ;
+				border-left-color:pink ;
+				border-right-color:transparent ;				
+				position: absolute;
+				left: calc(50% - 20px);
+				top: calc(50% - 20px);
+				animation: xuanzhuan 2s  infinite 0s;
+				animation-timing-function: linear;
+			}			
+			@keyframes xuanzhuan{
+				from{
+					transform: rotate(0deg);
+					
+				}
+				to{
+					transform: rotate(360deg);
+				}
+				
+			}@keyframes donghua1{
+				from{
+					border-top-color:#000000 ;
+			 	    border-bottom-color:#000000 ;
+				    border-left-color:#000000 ;
+				    border-right-color:#000000 ;
+				}
+				to{
+					border-top-color:#111111 ;
+			 	    border-bottom-color:#111111 ;
+				    border-left-color:#111111 ;
+				    border-right-color:#111111 ;
+				}
+				
+			}
+			.dog{
+				width: 400px;
+				height: 400px;
+				animation: donghua1 20s;
+				}
+			@keyframes donghua1{
+				0%{
+					-webkit-filter: brightness(0) ;
+				}
+				50%{
+					-webkit-filter: brightness(0) brightness(20);
+				}
+				100%{
+				    -webkit-filter: brightness(1) brightness(1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loading">
+			<img class="dog" src="img/dog.jpg"/>
+			<div class="child1"></div>
+			<div class="child2"></div>
+			<div class="child3"></div>
+			<div class="child4"></div>
+			<div class="child5"></div>
+			
+		</div>
+		
+	</body>
+</html>
